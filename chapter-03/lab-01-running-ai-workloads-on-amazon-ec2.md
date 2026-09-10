@@ -1,4 +1,4 @@
-# Hands-On Lab: AWS EC2 for AI Workloads
+# Hands-On Lab: Running AI Workloads on Amazon EC2
 
 In this lab, you will launch a GPU-enabled Amazon EC2 instance, connect to it through SSH, verify access to the NVIDIA GPU, and run a simple PyTorch workload.
 
