@@ -88,9 +88,6 @@ Make sure these ports are available before starting Triton.
 The lab implements the following separation:
 <img width="1439" height="562" alt="triton-1" src="https://github.com/user-attachments/assets/47beef68-8fe3-4e1c-a46d-4a3860c320ca" />
 
-
-```
-
 The client handles preprocessing and response interpretation, while Triton manages model loading, execution, batching, concurrency, and metrics.
 
 This separation allows the serving backend to be optimized without significantly changing the client application.
