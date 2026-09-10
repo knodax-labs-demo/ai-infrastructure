@@ -27,29 +27,7 @@ By completing this lab, you will learn how to:
 ## Architecture
 
 The monitoring architecture is:
-
-```text
-NVIDIA GPU
-    ↓
-NVIDIA Driver / DCGM
-    ↓
-DCGM Exporter
-    ↓
-Service :9400
-    ↓
-ServiceMonitor
-    ↓
-Prometheus
-   ├──────────────► Grafana
-   │                  ↓
-   │              Dashboards
-   │
-   └──────────────► PrometheusRule
-                        ↓
-                    Alertmanager
-                        ↓
-                   Notifications
-```
+<img width="1057" height="889" alt="prometheus" src="https://github.com/user-attachments/assets/bbb8ef61-8993-4cf2-9bc0-4b1bcf31491f" />
 
 The broader monitoring stack also collects standard Kubernetes infrastructure telemetry through components such as:
 
