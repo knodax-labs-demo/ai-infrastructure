@@ -1,4 +1,4 @@
-# Hands-On Lab: Spin Up Your First AI GPU VM
+# Hands-On Lab: Launch Your First GPU-Powered AI Virtual Machine
 
 In this lab, you will launch a cloud virtual machine equipped with an NVIDIA GPU and configure it for basic AI workloads. You will connect to the VM, verify that the operating system can access the GPU, install PyTorch, and run a small GPU computation from Python.
 
