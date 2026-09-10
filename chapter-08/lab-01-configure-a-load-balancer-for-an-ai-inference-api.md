@@ -208,33 +208,7 @@ A **canary Ingress** sends a percentage of requests to a second application vers
 The architecture is:
 <img width="1109" height="889" alt="load-balancer-lab-1" src="https://github.com/user-attachments/assets/1c12b655-3d83-43d1-8650-2c5567dfdb37" />
 
-```text
-                    Client
-                      │
-                      ▼
-          ┌──────────────────────┐
-          │ External Load Balancer│
-          │       Layer 4         │
-          └──────────┬───────────┘
-                     │
-                     ▼
-          ┌──────────────────────┐
-          │    NGINX Ingress     │
-          │       Layer 7        │
-          │ Routing / TLS / Rate │
-          │       Limiting       │
-          └──────────┬───────────┘
-                     │
-                     ▼
-            Kubernetes Service
-                     │
-          ┌──────────┼──────────┐
-          │          │          │
-          ▼          ▼          ▼
-       Pod 1       Pod 2       Pod 3
-          │          │          │
-          └────── AI Inference ─┘
-```
+
 
 A canary path adds a second application version:
 
@@ -516,20 +490,8 @@ Observe whether responses identify traffic handled by different versions.
 The rollout concept is:
 <img width="1151" height="537" alt="load-balancer-lab-2" src="https://github.com/user-attachments/assets/6eb2e6a0-f057-4de4-8c08-0539046de228" />
 
-```text
-Stable 100%
-    ↓
-Canary 10%
-Stable 90%
-    ↓
-Canary 25%
-Stable 75%
-    ↓
-Canary 50%
-Stable 50%
-    ↓
-Canary 100%
-```
+<img width="468" height="22" alt="image" src="https://github.com/user-attachments/assets/be1af4ac-04e9-4ce6-9168-63d649eb7ab5" />
+<img width="468" height="22" alt="image" src="https://github.com/user-attachments/assets/68a4c4fb-62f0-4474-b4cd-31cbb594bfc3" />
 
 If latency, errors, or application behavior degrade:
 
@@ -629,20 +591,6 @@ The configuration can demonstrate:
 A simplified request path is:
 <img width="1439" height="568" alt="load-balancer-lab-3" src="https://github.com/user-attachments/assets/e53bb81f-25a6-42b3-89ae-5d5dae34488a" />
 
-
-```text
-Client
-   ↓
-Envoy Proxy
-   │
-   ├── Least-Request Routing
-   ├── Health Awareness
-   ├── Retries
-   ├── Outlier Detection
-   └── Circuit Breaking
-          ↓
-   Inference Backends
-```
 
 Unlike simple round-robin distribution, an intelligent Layer 7 proxy can make routing decisions based on backend health, request behavior, and configured load-balancing policies.
 
