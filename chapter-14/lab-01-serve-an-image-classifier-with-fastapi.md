@@ -37,6 +37,8 @@ Build a FastAPI-based image classification service that:
 * Exposes a health endpoint
 * Automatically uses CUDA when available
 * Can optionally run inside Docker
+  <img width="1439" height="699" alt="image-classifier-1" src="https://github.com/user-attachments/assets/149c6d4a-0a7f-4c09-848f-4351dfc869c8" />
+
 
 ---
 
