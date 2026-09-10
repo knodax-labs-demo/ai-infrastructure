@@ -1,4 +1,4 @@
-# Hands-On Lab: Compare GPU Cost and Performance Across Clouds
+# Hands-On Lab: Compare GPU Performance and Costs Across Cloud Platforms
 
 In this lab, you will deploy GPU-enabled virtual machines on **AWS, Google Cloud, and Microsoft Azure**, run the same PyTorch benchmark on each platform, and compare their performance and cost.
 
