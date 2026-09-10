@@ -1,4 +1,4 @@
-# Hands-On Lab: Containerize a PyTorch Model
+# Hands-On Lab: Build a Docker Container for a PyTorch Model
 
 In this lab, you will package a simple PyTorch model and FastAPI inference application inside a Docker container. You will build a Docker image, run the container, and send an image to the API to generate a prediction.
 
