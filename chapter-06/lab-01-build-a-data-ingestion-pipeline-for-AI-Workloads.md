@@ -1,4 +1,4 @@
-# Hands-On Lab: Build a Data Ingestion Pipeline
+# Hands-On Lab: Build a Data Ingestion Pipeline for AI Workloads
 
 In this lab, you will build a local data ingestion pipeline that combines **object storage, event streaming, and relational storage**.
 
