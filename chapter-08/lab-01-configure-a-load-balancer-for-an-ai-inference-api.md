@@ -206,6 +206,7 @@ A **Horizontal Pod Autoscaler** adjusts inference replicas based on resource uti
 A **canary Ingress** sends a percentage of requests to a second application version.
 
 The architecture is:
+<img width="1109" height="889" alt="load-balancer-lab-1" src="https://github.com/user-attachments/assets/1c12b655-3d83-43d1-8650-2c5567dfdb37" />
 
 ```text
                     Client
@@ -513,6 +514,7 @@ done
 Observe whether responses identify traffic handled by different versions.
 
 The rollout concept is:
+<img width="1151" height="537" alt="load-balancer-lab-2" src="https://github.com/user-attachments/assets/6eb2e6a0-f057-4de4-8c08-0539046de228" />
 
 ```text
 Stable 100%
@@ -625,6 +627,8 @@ The configuration can demonstrate:
 * Request limits
 
 A simplified request path is:
+<img width="1439" height="568" alt="load-balancer-lab-3" src="https://github.com/user-attachments/assets/e53bb81f-25a6-42b3-89ae-5d5dae34488a" />
+
 
 ```text
 Client
