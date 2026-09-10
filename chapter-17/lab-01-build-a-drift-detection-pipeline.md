@@ -196,6 +196,8 @@ The important requirement is that it represents the behavior considered normal.
 ---
 
 ## Reference-vs-Current Comparison
+<img width="1292" height="559" alt="drift-1" src="https://github.com/user-attachments/assets/e12f360d-7c32-4fc2-b351-ac0e02de89bb" />
+
 
 Later in the pipeline, every production batch is compared against this baseline:
 
